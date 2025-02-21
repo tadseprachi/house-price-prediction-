@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="bg-light"> <!-- Set a light background for the entire page -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary"> <!-- Primary color for the navbar -->
+        <a class="navbar-brand text-white" href="#">House Price Predictor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 bg-white p-4 rounded shadow"> <!-- White background for the form container -->
+        <h1 class="text-center">House Price Prediction</h1>
+        <form method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="bedrooms"><i class="fas fa-bed label-icon"></i>Number of Bedrooms:</label>
+                <input type="number" class="form-control" id="bedrooms" name="bedrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="bathrooms"><i class="fas fa-bath label-icon"></i>Number of Bathrooms:</label>
+                <input type="number" step="0.1" class="form-control" id="bathrooms" name="bathrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="size"><i class="fas fa-ruler-combined label-icon"></i>Square Feet:</label>
+                <input type="number" class="form-control" id="size" name="size" required>
+            </div>
+            <div class="form-group">
+                <label for="location"><i class="fas fa-map-marker-alt label-icon"></i>Zip Code:</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="crime_rate"><i class="fas fa-shield-alt label-icon"></i>Crime Rate:</label>
+                <input type="number" step="0.01" class="form-control" id="crime_rate" name="crime_rate" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="garage_spaces"><i class="fas fa-car label-icon"></i>Garage Spaces:</label>
+                <input type="number" class="form-control" id="garage_spaces" name="garage_spaces" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="lot_size"><i class="fas fa-tree label-icon"></i>Lot Size:</label>
+                <input type="number" step="0.01" class="form-control" id="lot_size" name="lot_size" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="school_rating"><i class="fas fa-star label-icon"></i>School Rating:</label>
+                <input type="number" class="form-control" id="school_rating" name="school_rating" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="year_built"><i class="fas fa-calendar-alt label-icon"></i>Year Built:</label>
+                <input type="number" class="form-control" id="year_built" name="year_built" value="0" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict Price</button>
+        </form>
+
+        {% if prediction is not none %}
+            <h2 class="mt-4 text-center">Predicted Price: ${{ prediction }}</h2>
+        {% endif %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-center text-lg-start mt-5">
+        <div class="text-center p-3 text-white">
+            © 2025 House Price Predictor
+        </div>
+    </footer>
+
+    <script

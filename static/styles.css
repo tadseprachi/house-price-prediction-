@@ -1,0 +1,44 @@
+/* General body styles */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+/* Container styles */
+.container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* Padding around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styles */
+h1 {
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Button styles */
+.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove border */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #f1f1f1; /* Light footer background */
+    padding: 10px 0; /* Padding for the footer */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Icon styles */
+.label-icon {
+    margin-right: 5px; /* Space between icon and label text */
+    color: #007bff; /* Color for the icon */
+}
