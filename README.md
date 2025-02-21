@@ -18,12 +18,15 @@ This is a Flask web application that predicts house prices based on various inpu
    git clone YOUR_REMOTE_URL
    
 2. Navigate to the project directory:
+   ```bash
    cd house-price-prediction
    
-3. Install the required packages:
+4. Install the required packages:
+   ```bash
    pip install -r requirements.txt
 
-4. Run the application:
+5. Run the application:
+   ```bash
    python app.py
 
 ## Usage
