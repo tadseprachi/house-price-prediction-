@@ -37,5 +37,10 @@ Fill in the form with the required details and click "Predict Price" to see the 
 Contributions are welcome! Please feel free to submit a pull request.
 
 ## Snapshots
-[![Alt text](snapshots)](https://github.com/tadseprachi/house-price-prediction-/tree/master/snapshot)
+![Screenshot 2025-02-21 181929](https://github.com/user-attachments/assets/c9948b9c-d356-42bc-bbc4-43cfa961b590)
+![Screenshot 2025-02-21 181948](https://github.com/user-attachments/assets/83735453-5921-4baf-9351-cd2b570dc0f5)
+![Screenshot 2025-02-21 182000](https://github.com/user-attachments/assets/6b81f81c-feec-419d-ad47-e273c35961be)
+
+
+
 
