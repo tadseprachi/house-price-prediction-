@@ -35,3 +35,7 @@ Fill in the form with the required details and click "Predict Price" to see the 
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
+
+## Snapshots
+![Screenshot 2025-02-21 182223](https://github.com/user-attachments/assets/de18a920-1fdd-48cc-bdb8-e07a46625a16)
+
